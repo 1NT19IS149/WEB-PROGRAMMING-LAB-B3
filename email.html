@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function fun()
+            {
+                let reg=/[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,3}/
+                let mat=document.getElementById("text").value
+                if(reg.test(mat))
+                {
+                    document.write("match found")
+                }
+                else{
+                    document.write("not found")
+                }
+            }
+        </script>
+         <input type="text" id="text">
+        <input type="submit" onclick="fun()">
+    </body>
+</html>
